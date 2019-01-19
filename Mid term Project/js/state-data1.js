@@ -1,0 +1,152 @@
+var stateData = {
+		messi: {
+		nickname: 'Messi "La Pulga"',
+		name: 'Lionel Andrés Messi Cuccittini',
+		birth: '24 June 1987 (age 31)',
+		nation: 'Argentina',
+		height: '1.70 m (5 ft 7 in)',
+		pos: 'Forward',
+		club: 'Barcelona FC',
+		num: '#10'
+	},
+	cristiano: {
+		nickname: 'Cristiano Ronaldo "CR7"',
+		name: 'Cristiano Ronaldo dos Santos Aveiro',
+		birth: '5 February 1985 (age 33)',
+		nation: 'Portugal',
+		height: '1.87 m (6 ft 2 in)',
+		pos: 'Forward',
+		club: 'Juventus FC',
+		num: '#7'
+	},
+	ney: {
+		nickname: 'Neymar "Juninho"',
+		name: 'Neymar da Silva Santos Júnior',
+		birth: '5 February 1992 (age 26)',
+		nation: 'Brazil',
+		height: '1.75 m (5 ft 9 in)',
+		pos: 'Forward',
+		club: 'PSG',
+		num: '#10',
+	},
+	suarez: {
+		nickname: 'Suarez "El Pistolero"',
+		name: 'Luis Alberto Suárez Díaz',
+		birth: '24 January 1987 (age 31)',
+		nation: 'Uruguay',
+		height: '1.82 m (6 ft 0 in)',
+		pos: 'Striker',
+		club: 'Barcelona FC',
+		num: '#9',
+	},
+	neuer: {
+		nickname: 'Neuer "Snapper"',
+		name: 'Manuel Peter Neuer',
+		birth: '27 March 1986 (age 32)',
+		nation: 'Germany',
+		height: '1.93 m (6 ft 4 in)',
+		pos: 'Goalkeeper',
+		club: 'Bayern Munchen FC',
+		num: '#1',
+	},
+	lewa: {
+		nickname: 'Lewandowski "The Body"',
+		name: 'Robert Lewandowski',
+		birth: '21 August 1988 (age 30)',
+		nation: 'Poland',
+		height: '1.85 m (6 ft 1 in)',
+		pos: 'Striker',
+		club: 'Bayern Munchen FC',
+		num: '#9'
+	},
+	ramos: {
+		nickname: 'Ramos "El Cuqui"',
+		name: 'Sergio Ramos Garcia',
+		birth: '30 March 1986 (age 32)',
+		nation: 'Spain',
+		height: '1.84 m (6 ft 0 in)',
+		pos: 'Defender',
+		club: 'Real Madrid FC',
+		num: '#4'
+	},
+	eden: {
+		nickname: 'Hazard "The Snake"',
+		name: 'Eden Michael Hazard',
+		birth: '7 January 1991 (age 27)',
+		nation: 'Belgium',
+		height: '1.73 m (5 ft 8 in)',
+		pos: 'Attacking Midfielder',
+		club: 'Chelsea FC',
+		num: '#10'
+	},
+	toni: {
+		nickname: 'Kroos "The Waiter"',
+		name: 'Toni Kroos',
+		birth: '4 January 1990 (age 28)',
+		nation: 'Germany',
+		height: '1.83 m (6 ft 0 in)',
+		pos: 'Midfielder',
+		club: 'Real Madrid FC',
+		num: '#8'
+	},
+	gon: {
+		nickname: 'Higuain "Pipita"',
+		name: 'Gonzalo Gerardo Higuaín',
+		birth: '10 December 1987 (age 30)',
+		nation: 'Argentina',
+		height: '1.84 m (6 ft 0 in)',
+		pos: 'Striker',
+		club: 'Milan (On Loan)',
+		num: '#9'
+	},
+	gea: {
+		nickname: 'De Gea "Sticky Gloves"',
+		name: 'David de Gea Quintana',
+		birth: '7 November 1990 (age 27)',
+		nation: 'Spain',
+		height: '1.92 m (6 ft 4 in)',
+		pos: 'Goalkeeper',
+		club: 'Manchester United FC',
+		num: '#1'
+	},
+	luk: {
+		nickname: 'Modric "Lucky Luka"',
+		name: 'Luka Modric',
+		birth: '9 September 1985 (age 33)',
+		nation: 'Croatia',
+		height: '1.72 m (5 ft 8 in)',
+		pos: 'Midfielder',
+		club: 'Real Madrid FC',
+		num: '#10'
+	},
+	kev: {
+		nickname: 'Kevin "The Ginger Pele"',
+		name: 'Kevin De Bruyne',
+		birth: '28 June 1991 (age 27)',
+		nation: 'Belgium',
+		height: '1.81 m (5 ft 11 in)',
+		pos: 'Midfielder',
+		club: 'Manchester City FC',
+		num: '#17'
+	},
+	bale: {
+		nickname: 'Bale "The Cannon"',
+		name: 'Gareth Frank Bale',
+		birth: '16 July 1989 (age 29)',
+		nation: 'Wales',
+		height: '6 ft 1 in (1.85 m)',
+		pos: 'Winger',
+		club: 'Real Madrid FC',
+		num: '#11'
+	},
+	kun: {
+		nickname: 'Sergio "El Kun" Aguero',
+		name: 'Sergio Leonel Aguero',
+		birth: '2 June 1988 (age 30)',
+		nation: 'Argentina',
+		height: '1.72 m (5 ft 8 in)',
+		pos: 'Striker',
+		club: 'Manchester City FC',
+		num: '#10'
+	},
+	};

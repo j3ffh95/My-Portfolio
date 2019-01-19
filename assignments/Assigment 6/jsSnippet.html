@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Video Watcher</title>
+  <link rel="stylesheet" href="http://www.teaching-materials.org/common/css/bootstrap.min.css">
+  <style type="text/css">
+  /* This puts titles always on a separate line from thumbnails */
+  #videos-list img {
+    display: block;
+  }
+  p {
+    text-align: right;
+  }
+  .header {
+    text-align: center;
+  }
+  .twitterBtn {
+    /* text-align: center; */
+    float: right;
+  }
+  .pinterestBtn {
+    float: right;
+  }
+  .pinBtn {
+    margin: -5px 10px;
+
+  }
+  </style>
+ </head>
+ <body>
+   <div class="container">
+
+    <div class="row">
+      <div class="col-md-12">
+       <h2 class="header">My Favorite Videos⚽</h2>
+       <p>Follow me!</p>
+      </div>
+    </div>
+   <nav>
+     <!-- TWITTER BUTTON -->
+     <div class="twitterBtn">
+     <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Hey So what you think of the videos?" data-show-count="false">Tweet!</a>
+     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+     </div>
+     <!-- TWITTER BUTTON ENDS  -->
+
+     <!-- PINTEREST BUTTON STARTS -->
+     <div class="pinterestBtn">
+       <a href="https://www.pinterest.com/j3ffh95/" data-pin-do="buttonFollow">
+         <img class="pinBtn" src="pinterestIcon.png" alt="pinterest icon" height="25px" width="25px"></a>
+       <script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
+     </div>
+    <!-- PINTEREST BUTTON ENDS -->
+   </nav>
+
+ <div class="row">
+   <div class="col-md-3">
+     <ul id="videos-list">
+    </ul>
+   </div>
+   <div class="col-md-9" id="video-watcher">
+   </div>
+ </div>
+
+ <div style="text-align:center; margin-top: 30px; clear:both;">
+  <a href="https://info.flagcounter.com/nEFy"><img src="https://s04.flagcounter.com/count/nEFy/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_12/viewers_0/labels_0/pageviews_0/flags_0/" alt="Flag Counter" border="0"></a>
+</div>
+
+</div>
+
+  <script type="text/javascript" src="http://www.teaching-materials.org/common/youtube.js"></script>
+  <script type="text/javascript" src="http://www.teaching-materials.org/common/js/jquery.min.js"></script>
+
+ <script>
+
+ function addVideoToList(video) {
+    var videoLink = $('<a>');
+    videoLink.append(video.title);
+    var linkUrl = videoLink.attr('href');
+    var thumbnailUrl = youtube.generateThumbnailUrl(video.youtubeId);
+    var thumbnailImg = $('<img>');
+    thumbnailImg.attr('src', thumbnailUrl);
+    videoLink.append(thumbnailImg);
+
+    videoLink.on('click', function(e) {
+        e.preventDefault();
+        var videoTitle = $('<h2>');
+        videoTitle.html(video.title + ' <small>' + video.author + '</small>');
+        var videoEmbed = $('<iframe></iframe>');
+        videoEmbed.attr('src', youtube.generateEmbedUrl(video.youtubeId) + '?autoplay=1');
+        videoEmbed.attr('width', 560);
+        videoEmbed.attr('height', 315);
+
+        var videoRating = $('<img></img>');
+        videoRating.attr('src', 'https://chart.googleapis.com/chart?chs=225x125&cht=gom&chd=t:' + video.rating);
+
+        var videoWatcher = $('#video-watcher');
+        videoWatcher.hide();
+        videoWatcher.empty();
+        videoWatcher.append(videoTitle);
+        videoWatcher.append(videoEmbed);
+        videoWatcher.append(videoRating);
+        videoWatcher.fadeIn();
+    });
+
+    var videoItem = $('<li>');
+    videoItem.append(videoLink);
+    $('#videos-list').append(videoItem);
+ }
+
+var videos = [
+  {"youtubeId": "Zo22d0vWqe0",
+    "title": "Joker's Pencil Trick",
+    "author": "By: Fox",
+    "rating": 60
+  },
+  {"youtubeId": "6ZfuNTqbHE8",
+    "title": "Infinity War Trailer",
+    "author": "By: Marvel",
+    "rating": 100
+  },
+  {"youtubeId": "xjDjIWPwcPU",
+    "title": "Black Panther Trailer",
+    "author": "By: Marvel",
+    "rating": 70
+  },
+  {"youtubeId": "uVdV-lxRPFo",
+    "title": "Civil War Trailer",
+    "author": "By: Marvel",
+    "rating": 80
+  },
+  {"youtubeId": "ONHBaC-pfsk",
+    "title": "Deadpool Trailer",
+    "author": "By: Marvel",
+    "rating": 100
+  },
+  {"youtubeId": "d96cjJhvlMA",
+    "title": "Guardians Of The Galaxy Trailer",
+    "author": " by: Marvel",
+    "rating": 50
+  }
+]
+
+for (var i = 0; i < videos.length; i++) {
+   addVideoToList(videos[i]);
+}
+
+</script>
+ </body>
+</html>

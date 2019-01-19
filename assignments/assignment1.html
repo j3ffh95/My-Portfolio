@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Fortune Teller</title>
+    <style media="screen">
+      body {
+        background-color: lightblue;
+        text-align: center;
+        font-family: cursive;
+        font-size: 20px;
+      }
+      p{
+        color: black;
+      }
+      h1 {
+        color: firebrick;
+        text-decoration: underline;
+      }
+      button {
+          color: #ff15b2;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Fortune Teller</h1>
+    <form id="futureForm" action="index.html" method="post">
+      <strong>Enter your name:</strong>
+      <input type="text" name="yourname" value="" id="name">
+      <br><strong>Enter another name:</strong>
+      <input type="text" name="spouse" value="" id="spouse">
+      <br><strong>Enter a number:</strong>
+      <input type="text" name="number" value="" id="number">
+      <br><strong>Enter a location:</strong>
+      <input type="text" name="city" value="" id="location">
+      <br><strong>Enter a job title:</strong>
+      <input type="text" name="career" value="" id="job">
+      <br>
+    </form>
+  <!-- This is a button to trigger an event -->
+    <button type="button" onclick="future()">Tell me my Fortune!</button>
+    <p id="demo"><b>Do you want to know your fortune?!! Go ahead Click.</b></p>
+  <script>
+  // this is my JS function
+    var career = document.getElementById('futureForm');
+
+    function future()
+      {
+        var name = document.forms['futureForm']['name'].value;
+        var spouse = document.forms['futureForm']['spouse'].value;
+        var number = document.forms['futureForm']['number'].value;
+        var location = document.forms['futureForm']['location'].value;
+        var job = document.forms['futureForm']['job'].value;
+        var greet = "Hi " + name;
+        var kids = " you will have " + number + " kids."
+        var couple = "And married to " + spouse;
+        var location = " while working as " + job + " in " + location;
+        var message = greet + kids + couple + location;
+        document.getElementById('demo').innerHTML=message
+        // var children = 3;
+        // var partner = 'your soulmate';
+        // var glocation = 'Miami';
+        // var job = 'web developer';
+        // document.getElementById('demo').innerHTML='You will be a ' + job + ' in ' + glocation + ', and married to ' + partner + ' with ' + children + ' kids.';
+
+      }
+
+  </script>
+  </body>
+</html>
