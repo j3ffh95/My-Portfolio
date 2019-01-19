@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+   <meta charset="utf-8">
+	<title>My Portfolio</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- this meta is for mobile versin
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">
+   <link rel="stylesheet" href="css/main.css">
+	 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+   <!-- favicons
+	================================================== -->
+	<link rel="icon" type="image/png" href="favicon.ico">
+
+	<!-- Jquery CDN
+	================================================== -->
+
+	<script
+	src="https://code.jquery.com/jquery-3.3.1.js"
+	integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	crossorigin="anonymous"></script>
+
+
+</head>
+
+<body id="top">
+		
+	<!-- header
+	 ================================================== -->
+	 
+	 <header>
+			<nav class="navbar">
+					<span class="open-slide">
+						<a href="#/" onclick="openSlideMenu()">
+							<svg width="30" height="30">
+									<path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+									<path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+									<path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+							</svg>
+						</a>
+					</span>
+			
+					<ul class="navbar-nav">
+						<li><a href="#intro">Home</a></li>
+						<li><a href="#about">About Me</a></li>
+						<li><a href="#education">Education</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#interests">Interests</a></li>
+						<li><a href="#contact">Contact Me</a></li>
+					</ul>
+				</nav>
+				<div id="side-menu" class="side-nav" style="width:15%;">
+						<a href="#/" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+						<a href="#intro">Home</a>
+						<a href="#about">About Me</a>
+						<a href="#education">Education</a>
+						<a href="#portfolio">Portfolio</a>
+						<a href="#interests">Interests</a>
+						<a href="#contact">Contact Me</a>
+					</div>
+	 </header>
+	 
+	 <!-- /header -->
+
+	<!-- intro section
+   ================================================== -->
+   <section id="intro">
+
+   	<div class="intro-overlay"></div>
+
+   	<div class="intro-content">
+   		<div class="row">
+
+   			<div class="col-twelve">
+
+	   			<h5>Hello, World!</h5>
+	   			<h1>I'm Jefferson Huisa.</h1>
+
+	   			<p class="intro-position">
+	   				<span>Front-end Developer</span>
+	   				<span>Programmer</span>
+	   			</p>
+
+	   			<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
+
+	   		</div>
+
+   		</div>
+   	</div> <!-- /intro-content -->
+
+   	<ul class="intro-social">
+         <li><a href="https://www.facebook.com/j3ffh95" target="_blank"><i class="fa fa-facebook"></i></a></li>
+         <li><a href="https://www.linkedin.com/in/jeffhuisa/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+         <li><a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+         <li><a href="https://github.com/j3ffh95" target="_blank"><i class="fa fa-github"></i></a></li>
+      </ul> <!-- /intro-social -->
+			
+   </section> <!-- /intro -->
+
+
+   <!-- about section
+	 ================================================== -->
+   <section id="about">
+
+   	<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>About Me</h5>
+   			<h1>Let Me Introduce Myself</h1>
+
+   			<div class="intro-info">
+
+   				<img src="images/profile-pic.jpg" alt="Profile Picture">
+
+   				<p class="lead">Hello! My name is Jefferson Huisa and I love coding.
+            For me coding would never get boring because there is always something new to learn something different. I am passionate about what I do and always give 100%. When I undertake a project or task,
+            I don't just complete it, I go the extra mile and make it better than requested.
+         </p>
+   			</div>
+
+   		</div>
+		 </div> 
+		 <!-- /section-intro -->
+		 <!-- JQUERY Gallery -->
+		 <div class="container1">
+			<h1>Queensborough CC</h1>
+			<div class="slider-outer">
+				<img src="images/arrow-left.png" class="prev" alt="Prev">
+				<div class="slider-inner">
+					<img src="images/image1.jpg" class="active">
+					<img src="images/image2.jpg">
+					<img src="images/image3.jpg">
+					<img src="images/image4.jpg">
+				</div>
+				<img src="images/arrow-right.png" class="next" alt="Next">
+			</div>
+		</div>
+
+   	<div class="row about-content">
+
+   		<div class="col-six tab-full">
+
+   			<h3>Profile</h3>
+   			<p>I am a part of the CUNY Techworks program at CUNY Queensborough CC.
+          In this program I am learning about computer programming and software design.</p>
+
+   			<ul class="info-list">
+   				<li>
+   					<strong>Full name:</strong>
+   					<span>Jefferson Carlos Huisa Valencia</span>
+   				</li>
+   				<li>
+   					<strong>Birth Date:</strong>
+   					<span>May 9, 1995</span>
+   				</li>
+   				<li>
+   					<strong>Email:</strong>
+   					<span>j3ffh95@gmail.com</span>
+   				</li>
+
+   			</ul> <!-- /info-list -->
+
+			 </div> 
+
+   		<div class="col-six tab-full">
+
+   			<h3>Skills</h3>
+   			<p>I am familiar with HTML5, CSS3, JavaScript and JQuery. I am still learning React.</p>
+
+				<ul class="skill-bars">
+				   <li>
+				   	<div class="progress percent85"><span>85%</span></div>
+				   	<strong>HTML5</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent85"><span>85%</span></div>
+				   	<strong>CSS3</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent50"><span>50%</span></div>
+				   	<strong>JavaScript</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent50"><span>50%</span></div>
+				   	<strong>JQuery</strong>
+					 </li>
+					 <li>
+						<div class="progress percent55"><span>55%</span></div>
+				   	<strong>Bootstrap</strong>
+				   </li>
+				   <li>
+						<div class="progress percent30"><span>30%</span></div>
+				   	<strong>React</strong>
+					 </li>
+
+				</ul> <!-- /skill-bars -->
+
+   		</div>
+
+   	</div>
+
+   	<div class="row button-section">
+   		<div class="col-twelve">
+   			<a href="#contact" title="Contact" class="button stroke smoothscroll">Contact</a>
+   			<a href="My New Resume.pdf" download="Jefferson's Resume" title="Download Resume" class="button button-primary">Download Resume</a>
+   		</div>
+   	</div>
+
+   </section> <!-- /about me-->
+
+
+   <!-- education Section
+   ================================================== -->
+	<section id="education" class="grey-section">
+
+
+   	<div class="row education-timeline">
+
+   		<div class="col-twelve education-header">
+
+   			<h2>Education</h2>
+
+   		</div> <!-- /education-header -->
+
+   		<div class="col-twelve">
+
+   			<div class="timeline-wrap">
+
+   				<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Applied Software Development Program</h3>
+	   					<p>August 2018 - Present</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>CUNY TechWorks</h4>
+	   					<p>Under the America's Promise CUNY TechWorks Program, Queensborough Community College (QCC) offers an Applied Software Development Training Program covering web client programming, systems design and implementation, and smart phone application development. This hands-on, tech skills training program culminates in a capstone application development class focused on building students' professional programming portfolios.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Online Coding School</h3>
+	   					<p>May 2017 - Present</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>TeamTreeHouse</h4>
+	   					<p>I started watching Udemy courses online and got myself familiarize with HTML5 and CSS3. Then I began to pay a monthly subscription in teamtreehouse.com where I began learning more about JavaScript and other languages, I am still watching the tutorials in teamtreehouse.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+   			</div> <!-- /timeline-wrap -->
+
+   		</div> <!-- /col-twelve -->
+
+   	</div> <!-- /education-timeline -->
+
+	</section> <!-- /features -->
+
+
+	<!-- Portfolio Section
+   ================================================== -->
+	<section id="portfolio">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Portfolio</h5>
+   			<h1>Check Out Some of My Works.</h1>
+
+   			<p class="lead">This are some of my Assignments from my class ET-712.</p>
+   		</div>
+   	</div> <!-- /section-intro-->
+
+   	<div class="row portfolio-content">
+
+   		<div class="col-twelve">
+
+				 <!-- portfolio-wrapper -->
+
+				 <!-- Assignment 1 -->
+	         <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+
+	         	<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/a1.jpg" alt="assignment 1">
+	                  <a href="assignments/assignment1.html" class="overlay">
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+		     					       <h3 class="folio-title">The Fortune Teller</h3>
+		     					    	 <span class="folio-types">
+		     					       	  Assignment 1
+		     					       </span>
+		     					   </div>
+	                     </div>
+	                  </a>
+	               </div>
+							</div> 
+				<!-- /assignment 1 end -->
+
+				<!-- Assignment 2 -->
+	        		<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/a2.jpg" alt="assignment 2">
+	               	<a href="assignments/assignment2.html" class="overlay">
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">The Age Calculator</h3>
+		     					    	<span class="folio-types">
+		     					       	  Assignment 2
+		     					      </span>
+		     					   </div>
+	                     </div>
+	                  </a>
+	               </div>
+							</div>
+				 <!-- /assignment 2 end -->
+
+				 <!-- Assignment 3 -->
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/a3.jpg"alt="assignment 3">
+	                  <a href="assignments/assignment3/cashRegister.html" class="overlay">
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">The Cash Register</h3>
+		     					    	<span class="folio-types">
+		     					       	  Assignment 3
+		     					      </span>
+		     					   </div>
+	                     </div>
+	                  </a>
+	               </div>
+							</div> 
+					<!-- /assignment 3 end-->
+
+					<!-- Assignment 4 -->
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/a4.jpg" alt="assignment 4">
+	                  <a href="assignments/assignment4/creditCard.html" class="overlay">
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Credit Card Validation</h3>
+		     					    	<span class="folio-types">
+		     					       	  Assignment 4
+		     					      </span>
+		     					   </div>
+	                     </div>
+	                  </a>
+	               </div>
+							</div> 
+					<!-- /assignment 4 end -->
+
+					<!-- Assignment 5 -->
+
+							<div class="bgrid folio-item">
+								<div class="item-wrap">
+									<img src="images/portfolio/a5.jpg" alt="assignment 5">
+									 <a href="assignments/assignment5/jsSnippet.html" class="overlay">
+											<div class="folio-item-table">
+												<div class="folio-item-cell">
+													<h3 class="folio-title">JS Snippet APIs</h3>
+												<span class="folio-types">
+														 Assignment 5
+												</span>
+										 </div>
+											</div>
+									 </a>
+								</div>
+						 </div> 
+					<!-- /assignment 5 end -->
+
+					<!-- Assignment 6 -->
+
+						 <div class="bgrid folio-item">
+							<div class="item-wrap">
+								<img src="images/portfolio/a6.jpg" alt="assignment 6">
+								 <a href="assignments/Assigment 6/jsSnippet.html" class="overlay">
+										<div class="folio-item-table">
+											<div class="folio-item-cell">
+												<h3 class="folio-title">Youtube API</h3>
+											<span class="folio-types">
+													 Assignment 6
+											</span>
+									 </div>
+										</div>
+								 </a>
+							</div>
+					 </div> 
+				<!-- /assignment 6 end -->
+
+				<!-- Assignment 7 -->
+
+					 <div class="bgrid folio-item">
+						<div class="item-wrap">
+							<img src="images/portfolio/a7.jpg" alt="assignment 7">
+							 <a href="assignments/assignment7.html" class="overlay">
+									<div class="folio-item-table">
+										<div class="folio-item-cell">
+											<h3 class="folio-title">JQuery Animation</h3>
+										<span class="folio-types">
+												 Assignment 7
+										</span>
+								 </div>
+									</div>
+							 </a>
+						</div>
+				 </div> 
+			<!-- /assignment 7 end -->
+
+			<!-- Project 1 -->
+				 <div class="bgrid folio-item">
+					<div class="item-wrap">
+						<img src="images/portfolio/pro1.jpg" alt="Project 1">
+						 <a href="Mid term Project/MidTermProj.html" class="overlay">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">Open Ended Project</h3>
+									<span class="folio-types">
+											 Midterm Project
+									</span>
+							 </div>
+								</div>
+						 </a>
+					</div>
+			 </div> 
+		<!-- /project 1 end -->
+
+	      </div> <!-- /portfolio-wrapper -->
+
+   		</div>  <!-- /twelve -->
+
+   	</div> <!-- /portfolio-content -->
+
+	</section> <!-- /portfolio -->
+
+	<!-- interests Section
+   ================================================== -->
+	<section id="interests">
+
+		<div class="overlay"></div>
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Interests</h5>
+   			<h1>Things I Like Besides Coding</h1>
+
+   			<p class="lead">I love soccer and started playing when I was  5 years old. I also love exploring new cultures, food, and learning from people.
+
+					I'm passionate about being a web developer. I enjoy learning new languages and technologies, creating something unique, and collaborating with other like minded people.</p>
+
+   		</div>
+   	</div> <!-- /section-intro -->
+	</section> <!-- /interests -->
+
+   <!-- contact
+   ================================================== -->
+	<section id="contact">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Contact</h5>
+				 <h1>Keep in touch</h1>
+				 
+   		</div>
+   	</div> <!-- /section-intro -->
+
+   	<div class="row contact-form">
+
+   		<div class="col-twelve">
+
+            <!-- form -->
+          <form name="contactForm" id="contactForm" onsubmit="return confirm('Thanks for contacting me!');">
+      			<fieldset>
+								<div class="form-field">
+										<input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
+									</div>
+									<div class="form-field">
+										<input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
+									</div>
+									<div class="form-field">
+										<input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
+									</div>
+									<div class="form-field">
+										<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
+									</div>
+									<div class="form-field">
+											<button class="submitform">Submit</button>
+									</div>
+							</fieldset>
+      		</form> <!-- Form End -->
+
+    	 </div> <!-- /col-twelve -->
+
+   	</div> <!-- /contact-form -->
+
+	</section> <!-- /contact -->
+
+
+   <!-- footer
+   ================================================== -->
+
+   <footer>
+     	<div class="row">
+
+     		<div class="col-six tab-full pull-right social">
+
+     			<ul class="footer-social">
+			      <li><a href="https://www.facebook.com/j3ffh95" target="_blank"><i class="fa fa-facebook"></i></a></li>
+			      <li><a href="https://github.com/j3ffh95" target="_blank"><i class="fa fa-github"></i></a></li>
+			      <li><a href="https://www.linkedin.com/in/jeffhuisa/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+			   </ul>
+				 		
+	      </div>
+
+			</div> <!-- /row -->
+			
+			
+	 </footer>
+	 
+	 <!-- FOOTER END ==================================================-->
+
+   <!-- JavaScript
+	 ================================================== -->
+	 
+		<script src="js/main.js"></script>
+	
+
+</body>
+
+</html>
