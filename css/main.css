@@ -3,7 +3,7 @@
 
 html {
 	font-size: 10px;
-	scroll-behavior: smooth;
+	scroll-behavior: smooth; 
 }
 
 @media only screen and (max-width:1024px) {
@@ -445,14 +445,12 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 @media(max-width:568px){
-	.navbar-nav{display:none}
+	.navbar-nav{
+		display:none
+	}
 	.navbar {
 		height: 11%;
 	}
-	.side-nav{width:40%;
-	font-size: 5px;
-	}
-	
 }
 
 @media(min-width:568px){
