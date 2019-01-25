@@ -39,7 +39,7 @@ body {
 
 /**
  * ===================================================================
- * 03. typography & general theme styles - (_document-setup.scss)
+ * 03. typography & general theme styles 
  *
  * -------------------------------------------------------------------
  */
@@ -101,7 +101,7 @@ small {
 
 /*
  * ===================================================================
- * 05. forms - (_forms.scss)
+ * 05. forms 
  *
  * -------------------------------------------------------------------
  */
@@ -449,7 +449,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 		display:none
 	}
 	.navbar {
-		height: 11%;
+		height: 50px;
+		z-index: 100;
 	}
 }
 
@@ -775,13 +776,57 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .prev{
 	position:relative;
 	margin-right:-45px;
-	z-index:100;
+	z-index:50;
 }
 
 .next{
 	position:relative;
 	margin-left:-45px;
 	z-index:100;
+}
+@media(max-width:568px) {
+	.container1 {
+		width: 80%;
+	}
+
+	/* .slider-inner{
+		width:500px;
+		height:300px;
+		position:relative;
+		overflow:hidden;
+		float:left;
+		padding:3px;
+		border:#777 solid 1px;
+	} */
+	
+	.slider-inner img{
+		display:none;
+		width:500px;
+		height:300px;
+	}
+	
+	.slider-inner img.active{
+		display:inline-block;
+	}
+	.prev,.next{
+		float:left;
+		margin-top:130px;
+		cursor: pointer;
+	}
+	
+	.prev{
+		position:relative;
+		top: 200px;
+		margin-right:-45px;
+		z-index:50;
+	}
+	
+	.next{
+		position:relative;
+		margin-left: 50px;
+		right: 50px;
+		z-index:100;
+	}
 }
 /**
  * responsive:
