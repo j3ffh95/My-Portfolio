@@ -24,7 +24,6 @@ html {
 
 html, body {
 	height: 100%;
-	scroll-behavior: smooth;
 }
 body {
 	background: #151515;
@@ -44,7 +43,6 @@ body {
  * -------------------------------------------------------------------
  */
 h1, h2, h3, h4, h5 {
-	font-family: 'Open Sans', sans-serif;
 	color: #313131;
 	font-style: normal;
 	text-rendering: optimizeLegibility;
@@ -386,7 +384,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   color:#f2f2f2;
   text-align:center;
   padding:14px 16px;
-  text-decoration:none;
+  text-decoration: none;
 	font-size:17px;
 	border-radius: 10px;
 }
@@ -786,7 +784,9 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 @media(max-width:568px) {
 	.container1 {
-		width: 80%;
+		width: 100%;
+		margin: 0;
+		padding: 0;
 	}
 
 	.slider-inner{
