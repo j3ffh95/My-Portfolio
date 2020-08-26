@@ -369,7 +369,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * -------------------------------------------------------------------
  */
  .navbar{
-  background-color:#f9a600ad;
+  background-color:#ffab00;
   overflow:hidden;
 	height:100%;
 	position: fixed;
