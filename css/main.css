@@ -497,7 +497,7 @@ input::-moz-focus-inner {
   width: 100%;
 }
 
-@media (max-width: 568px) {
+@media (max-width: 768px) {
   .navbar-nav {
     display: none;
   }
@@ -507,7 +507,7 @@ input::-moz-focus-inner {
   }
 }
 
-@media (min-width: 568px) {
+@media (min-width: 768px) {
   .open-slide {
     display: none;
   }
@@ -767,6 +767,7 @@ input::-moz-focus-inner {
 .about-content .info-list {
   list-style: none;
   margin-left: 0;
+  padding: 0;
 }
 .about-content .info-list li {
   padding: 0 0 1.5rem 0;
@@ -782,7 +783,7 @@ input::-moz-focus-inner {
   font-weight: bold;
 }
 .about-content .info-list li span {
-  display: block;
+  display: inline-block;
   font-family: "Open Sans", sans-serif;
   color: #888888;
   font-size: 1.5rem;
@@ -921,6 +922,7 @@ input::-moz-focus-inner {
   .about-content .info-list,
   .about-content .skill-bars {
     margin-bottom: 4.2rem;
+    padding: 0;
   }
   .button-section .button {
     width: 100%;
