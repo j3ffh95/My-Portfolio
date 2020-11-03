@@ -1,5 +1,9 @@
 @import url("font-awesome/css/font-awesome.min.css");
 
+:root {
+  --primary-color: #ffab00;
+}
+
 html {
   font-size: 10px;
   scroll-behavior: smooth;
@@ -32,6 +36,7 @@ body {
   line-height: 3rem;
   color: #6e6e6e;
   overflow-x: hidden;
+  transition: all 0.5s ease;
 }
 
 /**
@@ -425,7 +430,6 @@ input::-moz-focus-inner {
   position: fixed;
   z-index: 1;
   border-radius: 10px;
-  /* margin-left: 5%; */
 }
 
 .navbar a {
@@ -473,8 +477,9 @@ input::-moz-focus-inner {
   transition: 0.3s;
 }
 
-.side-nav a:hover {
-  color: #fff;
+.side-nav a:hover:not(.btn-close) {
+  color: #333;
+  background-color: #ffab00;
 }
 
 .side-nav .btn-close {
