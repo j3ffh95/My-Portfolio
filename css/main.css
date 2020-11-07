@@ -1472,7 +1472,7 @@ footer .copyright span:last-child::after {
  * footer
  * -------------------------------------------------------------------
  */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 500px) {
   #portfolio .folio-item {
     width: 100%;
     margin-bottom: 5rem;
